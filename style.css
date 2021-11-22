@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+/* **********************************************************************************
+
+                                Header
+
+   **********************************************************************************        
+ */
+
+.title-section {
+  background-color: #f9f7f1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 90px;
+  background-color: #f9f7f1;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.links {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.links li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 8px;
+}
+.links li a:hover {
+  color: #6200b3;
+}
+
+.btn-1,
+.btn-2 {
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-1 {
+  background-color: transparent;
+}
+.btn-1:hover {
+  background-color: #240046;
+  color: white;
+}
+
+.btn-2 {
+  background-color: #6200b3;
+  color: white;
+}
+.btn-2:hover {
+  background-color: #240046;
+}
+.items {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.text-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+.text-items article {
+  display: flex;
+  height: 50%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.text-items p {
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.text-items p i {
+  color: goldenrod;
+}
+.text-items h1 {
+  font-weight: 800;
+  font-size: 65px;
+}
+#btn-item {
+  width: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+#btn-item a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6200b3;
+}
+#btn-item a:hover {
+  color: #240046;
+}
+.btn-3 {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+  margin-right: 35px;
+  transition: all 0.2s ease;
+}
+.btn-3 {
+  background-color: #6200b3;
+  color: white;
+}
+.btn-3:hover {
+  background-color: #240046;
+}
+.image-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+.image-item img {
+  width: 100%;
+}
+#checks {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+#checks p {
+  margin-right: 30px;
+}
+#checks p i {
+  color: green;
+}
