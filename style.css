@@ -377,7 +377,64 @@ nav {
   background-color: #6200b3;
   color: white;
 }
+/* **********************************************************************************
 
+                                   Footer
+
+   **********************************************************************************        
+ */
+footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f9f7f1;
+}
+.footer-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  margin-left: 30px;
+}
+.footer-items p {
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+.footer-lists {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.footer-lists ul h2 {
+  font-size: 19px;
+  margin: 10px 0;
+}
+.footer-lists ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-lists ul li {
+  margin: 10px 0;
+  list-style: none;
+}
+.footer-lists ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #6c757d;
+}
+.footer-lists ul li a:hover {
+  color: black;
+}
 /* **********************************************************************************
 
                                Media Quries: 915px
@@ -465,115 +522,153 @@ nav {
   #review-items {
     width: 40%;
   }
-}
-/* **********************************************************************************
+  footer {
+    height: auto;
+    flex-direction: column;
+  }
+  .footer-items {
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-items p {
+    margin: 20px 0;
+  }
+  .footer-lists {
+    width: 100%;
+  }
+  /* **********************************************************************************
 
                                Media Quries: 768px
 
    **********************************************************************************        
  */
-@media screen and (max-width: 768px) {
-  #second-section-text {
-    text-align: center;
-    flex-direction: column;
+  @media screen and (max-width: 768px) {
+    #second-section-text {
+      text-align: center;
+      flex-direction: column;
+    }
+    #section-text {
+      width: 100%;
+    }
+    #section-text h1 {
+      margin: 20px 30px;
+      text-align: left;
+    }
+    #section-text p {
+      margin: 20px 30px;
+      text-align: left;
+    }
+    #section-image {
+      width: 100%;
+    }
+    #section-image img {
+      width: 80%;
+      height: 80%;
+    }
+    .btn-4 {
+      width: 90%;
+      margin: 0;
+    }
+    #review-items {
+      width: 60%;
+    }
   }
-  #section-text {
-    width: 100%;
-  }
-  #section-text h1 {
-    margin: 20px 30px;
-    text-align: left;
-  }
-  #section-text p {
-    margin: 20px 30px;
-    text-align: left;
-  }
-  #section-image {
-    width: 100%;
-  }
-  #section-image img {
-    width: 80%;
-    height: 80%;
-  }
-  .btn-4 {
-    width: 90%;
-    margin: 0;
-  }
-  #review-items {
-    width: 60%;
-  }
-}
-/* **********************************************************************************
+
+  /* **********************************************************************************
 
                                Media Quries: 550px
 
    **********************************************************************************        
  */
 
-@media screen and (max-width: 550px) {
-  .text-items h1 {
-    font-size: 45px;
+  @media screen and (max-width: 550px) {
+    .text-items h1 {
+      font-size: 45px;
+    }
+    .text-items article h1,
+    .text-items article p {
+      margin-left: 15px;
+    }
+    #checks {
+      width: 100%;
+      align-items: flex-start;
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    #checks p {
+      margin-right: 0;
+    }
+    #btn-item {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-3 {
+      width: 90%;
+      height: 45px;
+      cursor: pointer;
+      margin: 20px 0;
+    }
+    .btn-3:hover {
+      background-color: #240046;
+    }
+    .image-item img {
+      width: 100%;
+      height: 100%;
+    }
+    #second-section-title h1 {
+      font-size: 35px;
+    }
+    #section-text h1 {
+      margin-left: 30px;
+      text-align: left;
+      font-size: 35px;
+    }
+    #section-text p {
+      margin: 20px 30px;
+      text-align: left;
+    }
+    #review-items {
+      width: 100%;
+    }
+    #review-comment {
+      font-size: 16px;
+    }
+    .footer-items {
+      align-items: flex-start;
+    }
+    .footer-lists {
+      flex-direction: column;
+    }
+    .footer-lists ul {
+      margin: 0 20px;
+    }
+    .footer-lists ul h2 {
+      font-size: 22px;
+    }
+    .footer-lists ul li a {
+      font-size: 16px;
+    }
   }
-  .text-items article h1,
-  .text-items article p {
-    margin-left: 15px;
-  }
-  #checks {
-    width: 100%;
-    align-items: flex-start;
-    margin-top: 20px;
-    flex-direction: column;
-  }
-  #checks p {
-    margin-right: 0;
-  }
-  #btn-item {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .btn-3 {
-    width: 100%;
-    height: 45px;
-    cursor: pointer;
-    margin: 20px 0;
-  }
-  .btn-3:hover {
-    background-color: #240046;
-  }
-  .image-item img {
-    width: 100%;
-    height: 100%;
-  }
-  #second-section-title h1 {
-    font-size: 35px;
-  }
-  #section-text h1 {
-    margin-left: 30px;
-    text-align: left;
-    font-size: 35px;
-  }
-  #section-text p {
-    margin: 20px 30px;
-    text-align: left;
-  }
-  #review-items {
-    width: 100%;
-  }
-  #review-comment {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 425px) {
-  #review-comment {
-    font-size: 14px;
-  }
-  .names-salary p {
-    font-size: 14px;
-    font-weight: 700;
-  }
-  #review-btn {
-    font-size: 14px;
+  @media screen and (max-width: 425px) {
+    #review-comment {
+      font-size: 14px;
+    }
+    .names-salary p {
+      font-size: 14px;
+      font-weight: 700;
+    }
+    #review-btn {
+      font-size: 14px;
+    }
+    .footer-lists ul h2 {
+      font-size: 19px;
+    }
+    .footer-lists ul li a {
+      font-size: 14px;
+    }
   }
 }
