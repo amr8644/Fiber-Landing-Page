@@ -10,8 +10,8 @@ Amr Ashebo
 
 ### Technologies Used
 
-HTML
-CSS
+HTML <br>
+CSS <br>
 JavaScript
 
 ### Fonts Used
