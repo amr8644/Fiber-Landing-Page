@@ -186,6 +186,12 @@ body {
   #title h1 {
     font-size: 26px;
   }
+  .terms {
+    margin: 20px 0;
+  }
+  .have {
+    margin: 10px 0;
+  }
 }
 @media screen and (max-width: 425px) {
   #sign-up-items {
@@ -195,10 +201,10 @@ body {
     font-size: 22px;
   }
   .terms {
-    font-size: 14px;
+    margin: 20px 0;
   }
   .have {
-    font-size: 14px;
+    margin: 10px 0;
   }
   #btn-1 {
     align-self: center;
